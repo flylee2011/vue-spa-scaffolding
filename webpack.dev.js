@@ -68,6 +68,13 @@ let devConfig = {
     },
     // plugins
     plugins: [
+        // 全局变量配置
+        new webpack.DefinePlugin({
+            // vue生产状态环境
+            'process.env': {
+                NODE_ENV: '"develop"'
+            }
+        }),
         // 分离公共类库
         new webpack.optimize.CommonsChunkPlugin({
             name: ['vendor', 'manifest']

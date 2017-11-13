@@ -72,6 +72,13 @@ let buildConfig = {
     },
     // plugins
     plugins: [
+        // 全局变量配置
+        new webpack.DefinePlugin({
+            // vue生产状态环境
+            'process.env': {
+                NODE_ENV: '"production"'
+            }
+        }),
         // 分离 css 文件
         new extractTextPlugin({
             filename: 'css/[name].[contenthash:8].css',

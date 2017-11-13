@@ -12,6 +12,9 @@ import $store from '../store';
 // 引入 css
 import '../asset/css/page/index.css';
 
+// 判断运行环境
+console.log('env status: ', process.env.NODE_ENV);
+
 // 根节点
 import indexRoot from './index.vue';
 // 实例化
