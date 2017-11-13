@@ -46,11 +46,12 @@ npm run start-build
 |   |-images
 |   |-html # 静态页
 |-page # 应用入口
-|-config # 配置文件，如接口域名、图片域名等
 |-component # vue 组件
 |-router # vue 路由
 |-store # vuex 组件
+|-config # 配置文件，如接口域名、图片域名等
 |-utils # 工具类组件
+|-vendor # 第三方插件类
 |-index.html # 入口html文件
 ```
 

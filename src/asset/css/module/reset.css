@@ -1,0 +1,13 @@
+/* css reset for mobile */
+html,
+body{font-size: 62.5%;-webkit-text-size-adjust:none;}
+body,button,input,select,textarea{font-family:"Helvetica Neue",Helvetica;line-height: 1;}
+article,aside,blockquote,body,button,dd,dl,dt,fieldset,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0;-webkit-text-size-adjust:100%}
+table{border-collapse:collapse;border-spacing:0}
+em,i{font-style:normal}
+li{list-style:none}
+img{border:0;}
+article,aside,footer,header,hgroup,menu,nav,section{display:block}
+a{text-decoration:none;-webkit-tap-highlight-color: rgba(0,0,0,0);outline: 0;}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden}
+input,textarea,select{-webkit-appearance: none;-webkit-tap-highlight-color:rgba(0,0,0,0);background:none;}
