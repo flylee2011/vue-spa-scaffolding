@@ -62,6 +62,14 @@ let buildConfig = {
             }
         ]
     },
+    // 解析
+    resolve: {
+        // 别名
+        alias: {
+            // 默认使用运行时文件 vue.runtime.esm.js，这里换成完整版方便使用template
+            'vue$': 'vue/dist/vue.esm.js'
+        }
+    },
     // plugins
     plugins: [
         // 分离 css 文件

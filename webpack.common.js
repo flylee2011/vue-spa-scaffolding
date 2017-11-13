@@ -20,7 +20,7 @@ let commonConfig = {
 // 入口
 commonConfig.entry = {
     // 公共类库
-    vendor: ['jquery', 'vue/dist/vue.esm.js', 'vue-router', 'vuex'],
+    vendor: ['vue/dist/vue.esm.js', 'vue-router', 'vuex'],
     // 业务
     page: commonConfig.devPath + 'page/index.js'
 };

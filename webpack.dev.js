@@ -51,7 +51,8 @@ let devConfig = {
                     options: {
                         name: '[name].[ext]',
                         publicPath: commonConfig.publicPath,
-                        outputPath: commonConfig.imgPath
+                        outputPath: commonConfig.imgPath,
+                        limit: commonConfig.imgMaxSize
                     }
                 }]
             }
@@ -61,7 +62,7 @@ let devConfig = {
     resolve: {
         // 别名
         alias: {
-            // 默认使用运行时文件 vue.runtime.esm.js
+            // 默认使用运行时文件 vue.runtime.esm.js，这里换成完整版方便使用template
             'vue$': 'vue/dist/vue.esm.js'
         }
     },
