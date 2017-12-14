@@ -22,7 +22,7 @@ commonConfig.entry = {
     // 公共类库
     vendor: ['vue/dist/vue.esm.js', 'vue-router', 'vuex'],
     // 业务
-    page: commonConfig.devPath + 'page/index.js'
+    page: [commonConfig.devPath + 'page/index.js']
 };
 
 module.exports = commonConfig;

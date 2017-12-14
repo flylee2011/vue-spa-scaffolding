@@ -16,7 +16,7 @@ let devConfig = {
         // 公共类库
         vendor: commonConfig.entry.vendor,
         // 业务
-        page: [commonConfig.entry.page]
+        page: commonConfig.entry.page
     },
     // 输出
     output: {

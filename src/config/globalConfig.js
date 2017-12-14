@@ -10,9 +10,10 @@ let globalConfig = {
     apiDomain: '/'
 };
 
-if (location.href.indexOf('localhost') != -1) {
-    // 本地域名，打开调试模式
+if (process.env.NODE_ENV == 'develop') {
+    // 打开调试模式
     globalConfig.debug = true;
+    globalConfig.apiDomain = '/test/';
 }
 
 export default globalConfig;
